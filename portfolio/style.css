@@ -1,0 +1,240 @@
+/* Customize the styles to match your preferences */
+
+
+*{box-sizing: border-box;
+
+
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    height:50px;
+    display: flex;
+    align-items: center; 
+    justify-content:right;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: right;
+    flex-direction:row;
+    
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin:35px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding:10px;
+    border-radius:7px;
+  }
+  
+  section {
+    padding: 50px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  nav ul li a:hover {
+    background-color: #807c7c; /* Change the color on hover */
+  }
+#home{
+    margin:0 auto;
+    height:auto;
+    width:fit-content;
+    padding-bottom:5px;
+}
+#mypic{
+    height:200px;
+    width:200px;
+    border-radius: 100%;
+}
+#home h1,#home p{
+    text-align:center;
+}
+#about{
+    padding-top:5px;
+    text-align:center;
+}
+  
+.container {
+	
+	width:fit-content;
+	margin: 30px auto;
+	
+	display: grid;
+	grid-template-rows: 150px 150px;
+	grid-template-columns: 150px 150px 150px;
+	
+	/* //grid-row-gap: 30px; */
+	/* //grid-column-gap: 30px; */
+	grid-gap: 30px;
+}
+
+.item {
+	padding: 20px;
+	font-family: sans-serif;
+	color: rgb(121, 86, 86);
+	
+	
+}
+.skicon{
+    margin:10px;
+    height:90px;
+    width:90px;
+}
+#cap{
+    text-align:center;
+}
+#portfolio{
+  width:fit-content;
+  margin:auto;
+}
+.skicon:hover{
+  box-shadow: 0px 0px 40px 20px #0ff;
+  transform:translateY(-10px);
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 11px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  /* Add more CSS styles as needed */
+}
+.one{
+  margin-left:25%;
+}
+.column :hover{
+  transform: scale(1.05);
+}
+.view{
+  border-radius: 8px;
+  padding:8px;
+}
+.project,#contact{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+ input, textarea {
+    border:0; outline:0;
+    padding: 1em;
+     border-radius:8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+   box-shadow:0px 1px 1px black;
+    resize: none;
+ }
+   input,textarea:focus {
+     box-shadow:0px 0px 2px 1px #e74c3c;
+   }
+ 
+ 
+ #input-submit {
+    color: white; 
+    background: #e74c3c;
+    cursor: pointer;
+ }
+    #input-submit:hover {
+     box-shadow:0 1px 1px 1px #aaa; 
+   }
+ 
+ 
+ textarea {
+     height: 126px;
+ }
+
+
+
+.half {
+ float: left;
+ width: 48%;
+ margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+    margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+ .half {
+    width: 100%; 
+    float: none;
+    margin-bottom: 0; 
+ }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+   content: " "; /* 1 */
+   display: table; /* 2 */
+}
+
+.cf:after {
+   clear: both;
+}
