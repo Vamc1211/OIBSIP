@@ -6,23 +6,23 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #eeeeee, #cccccc);
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
             margin: 0;
             padding: 0;
         }
+
 
         .temp {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            border: 1px;
             border-radius: 4px;
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #2003ff;
         }
 
         form {
@@ -40,6 +40,12 @@
             border: 1px solid #c1dde0;
             border-radius: 4px;
             font-size: 16px;
+            background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+           
+
+        }
+        ::placeholder{
+            color:black;
         }
 
         input[type="number"]:focus,
@@ -57,14 +63,15 @@
 
         input[type="button"]:hover {
             background-color: #3366cc;
+            transform: scale(1.5);
         }
 
-        input[readonly] {
-            background-color: #f2f2f2;
-        }
-
+        
         label {
             margin-left: 5px;
+        }
+        #select{
+            color:black;
         }
     </style>
 </head>
@@ -75,7 +82,7 @@
         <div class="a">
             <form>
                 <select id="tempUnit" name="tempUnit" aria-placeholder="TEMP UNIT">
-                    <option>Select the desired Temp unit</option>
+                    <option id="select">Select the desired Temp unit</option>
                     <option value="Fahrenheit">&deg;F</option>
                     <option value="Celsius">&deg;C</option>
                     <option value="Kelvin">&deg;K</option>
